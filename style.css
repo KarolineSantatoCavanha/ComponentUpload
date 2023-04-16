@@ -1,0 +1,61 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #fbfaff;
+  min-height: 100vh;
+  font-family: "Inter";
+  line-height: 130%;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 440px;
+  width: 90%;
+  margin: auto;
+}
+
+.drag-files {
+  background: #f3f0ff;
+  border: 1px dashed #c1b2fa;
+  border-radius: 8px;
+  text-align: center;
+  padding: 28px 0 32px;
+  position: relative;
+}
+
+.drag-files input {
+  all: unset;
+  opacity: 0;
+  inset: 0;
+  position: absolute;
+}
+
+.drag-files i.ph{
+  font-size: 48px;
+  color: #7C3AED;
+}
+
+.drag-files h3{
+  margin-top: 12px;
+  color: #7A5FEC;
+  font-size: 16px;
+}
+
+.drag-files p{
+  color: #746E82;
+  font-size: 18px;
+}
+
+/*aqui vamos configurar no js*/
+.drag-files .dragover{
+  color: #000;
+}
